@@ -10,17 +10,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dio: ^5.0.0 # Asegúrate de que ya tienes Dio
+  dio: ^5.0.0
   shared_preferences: ^2.0.0
   jwt_decoder: ^2.0.1
-  flutter_image_compress: ^2.4.0 # Asegúrate de usar la última versión
-  cupertino_icons: ^1.0.8 # Iconos estilo Cupertino para compatibilidad con iOS
-  font_awesome_flutter: ^10.1.0 # Iconos FontAwesome para Flutter
-  image_picker: ^0.8.4+3 # Paquete para seleccionar imágenes
-  swipe_cards: ^2.0.0+1 # Paquete para la funcionalidad de swipe
-  google_fonts: ^4.0.0 # Paquete para usar Google Fonts en Flutter
+  flutter_image_compress: ^2.4.0
+  cupertino_icons: ^1.0.8
+  font_awesome_flutter: ^10.1.0
+  image_picker: ^0.8.4+3
+  swipe_cards: ^2.0.0+1
+  google_fonts: ^4.0.0
   carousel_slider: ^5.0.0
   lottie: ^3.3.1
+  uuid: ^3.0.6 # Añade esta línea para la dependencia uuid
 
 dev_dependencies:
   flutter_test:

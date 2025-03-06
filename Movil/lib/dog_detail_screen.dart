@@ -4,6 +4,8 @@ import 'dart:convert';
 import 'models/data_model.dart';
 import 'services/api_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'models/message_model.dart';
+import 'models/notificacion_model.dart';
 
 class DogDetailScreen extends StatefulWidget {
   final String? idDogLiked; // ID del perro que dio "like" (opcional)

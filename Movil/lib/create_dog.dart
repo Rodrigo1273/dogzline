@@ -6,6 +6,8 @@ import 'services/api_service.dart';
 import 'models/data_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
+import 'models/message_model.dart';
+import 'models/notificacion_model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -143,7 +145,7 @@ class _CreateDogPageState extends State<CreateDogPage> {
         fotos: fotoBase64, // Una sola foto en base64
         comportamiento: 'Juguetón',
         idUsuario: userId!,
-        distancia: '', // No se usa en la creación
+        distancia: 0.0, // Usa un valor numérico en lugar de una cadena vacía
       );
 
       print('Intentando crear mascota con datos: ${mascota.toJson()}');

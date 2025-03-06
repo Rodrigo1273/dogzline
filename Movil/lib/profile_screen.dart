@@ -11,6 +11,7 @@ import 'package:shared_preferences/shared_preferences.dart'; // Importa SharedPr
 import 'swipe.dart'; // Importa el MatchScreen
 import 'dart:convert'; // Importa dart:convert para decodificar base64
 import 'dog_detail_screen.dart'; // Importa DogDetailScreen
+import 'models/notificacion_model.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override

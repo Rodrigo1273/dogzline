@@ -3,6 +3,11 @@ import '../models/data_model.dart';
 import '../models/message_model.dart'; // Importa message_model.dart
 import 'package:shared_preferences/shared_preferences.dart'; // Importa shared_preferences
 import 'package:flutter/material.dart';
+import '../models/notificacion_model.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+import '../models/chat_model.dart'; // Asegúrate de importar el modelo correcto
+
 
 class ApiService {
   final Dio _dio = Dio();
@@ -426,6 +431,17 @@ Future<Notificacion?> createNotificacion(Notificacion notificacion) async {
       throw Exception('Error al obtener los likes: $e');
     }
   }
+Future<Response> createChat(Chat chat) async {
+  final response = await http.post(
+    Uri.parse('$baseUrl/chat'),
+    headers: {'Content-Type': 'application/json'},
+    body: jsonEncode(chat.toJson()), // Asegúrate de que `toJson()` está definido en Chat
+  );
+
+  return response;
+}
+
+
 }
 
 
